@@ -259,7 +259,7 @@ class OpendataClient(object):
               by the Diavgeia administators.
         """
         return self._get_resource(
-            '/search/advanced/q={0}&page={1}&size={2}'.format(q, page, size))
+            '/search/advanced/?q={0}&page={1}&size={2}'.format(q, page, size))
     
     
     def get_simple_search_results(self, **kwargs):
